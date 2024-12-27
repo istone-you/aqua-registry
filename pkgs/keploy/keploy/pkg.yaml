@@ -1,0 +1,38 @@
+packages:
+  - name: keploy/keploy@v2.3.0-beta9
+  - name: keploy/keploy
+    version: v2.2.0-alpha4-rc5
+  - name: keploy/keploy
+    version: v2.2.0-alpha32
+  - name: keploy/keploy
+    version: v2.2.0-alpha3
+  - name: keploy/keploy
+    version: v2.2.0-alpha29
+  - name: keploy/keploy
+    version: v2.2.0-alpha21-rc9
+  - name: keploy/keploy
+    version: v2.2.0-alpha21-rc2
+  - name: keploy/keploy
+    version: v2.2.0-alpha2
+  - name: keploy/keploy
+    version: v2.2.0-alpha19
+  - name: keploy/keploy
+    version: v2.2.0-alpha1
+  - name: keploy/keploy
+    version: v2.1.0-alpha9
+  - name: keploy/keploy
+    version: v2.1.0-alpha32
+  - name: keploy/keploy
+    version: v2.1.0-alpha3
+  - name: keploy/keploy
+    version: v2.1.0-alpha25
+  - name: keploy/keploy
+    version: v2.0.0-alpha19
+  - name: keploy/keploy
+    version: v0.9.1
+  - name: keploy/keploy
+    version: v0.8.3
+  - name: keploy/keploy
+    version: v0.5.6
+  - name: keploy/keploy
+    version: v0.4.0

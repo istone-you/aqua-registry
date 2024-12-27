@@ -1,0 +1,236 @@
+packages:
+  - type: github_release
+    repo_owner: keploy
+    repo_name: keploy
+    description: Unit and Integration Test generation for Developers. Generate tests and stubs for your application that actually work
+    version_constraint: "false"
+    version_overrides:
+      - version_constraint: semver("<= 0.3.3")
+        no_asset: true
+      - version_constraint: semver("<= 0.4.0")
+        asset: keploy_{{trimV .Version}}_{{.OS}}_{{.Arch}}.{{.Format}}
+        format: tar.gz
+        checksum:
+          type: github_release
+          asset: keploy_{{trimV .Version}}_checksums.txt
+          algorithm: sha256
+      - version_constraint: Version == "v0.4.1"
+        no_asset: true
+      - version_constraint: semver("<= 0.5.6")
+        asset: keploy_{{trimV .Version}}_{{.OS}}_{{.Arch}}.{{.Format}}
+        format: tar.gz
+        checksum:
+          type: github_release
+          asset: keploy_{{trimV .Version}}_checksums.txt
+          algorithm: sha256
+      - version_constraint: semver("<= 0.8.3")
+        asset: keploy_{{.OS}}_{{.Arch}}.{{.Format}}
+        format: tar.gz
+        rosetta2: true
+        checksum:
+          type: github_release
+          asset: keploy_{{trimV .Version}}_checksums.txt
+          algorithm: sha256
+        overrides:
+          - goos: darwin
+            asset: keploy_{{.OS}}_all.{{.Format}}
+      - version_constraint: Version == "v0.8.4"
+        no_asset: true
+      - version_constraint: semver("<= 0.9.1")
+        asset: keploy_{{.OS}}_{{.Arch}}.{{.Format}}
+        format: tar.gz
+        rosetta2: true
+        checksum:
+          type: github_release
+          asset: keploy_{{trimV .Version}}_checksums.txt
+          algorithm: sha256
+        overrides:
+          - goos: darwin
+            asset: keploy_{{.OS}}_all.{{.Format}}
+      - version_constraint: Version == "v2.0.0-alpha"
+        no_asset: true
+      - version_constraint: semver("<= 2.0.0-alpha19")
+        asset: keploy_{{.OS}}_{{.Arch}}.{{.Format}}
+        format: tar.gz
+        checksum:
+          type: github_release
+          asset: keploy_{{trimV .Version}}_checksums.txt
+          algorithm: sha256
+        supported_envs:
+          - linux
+      - version_constraint: Version == "v2.0.0-alpha2"
+        no_asset: true
+      - version_constraint: semver("<= 2.1.0-alpha25")
+        asset: keploy_{{.OS}}_{{.Arch}}.{{.Format}}
+        format: tar.gz
+        checksum:
+          type: github_release
+          asset: keploy_{{trimV .Version}}_checksums.txt
+          algorithm: sha256
+        supported_envs:
+          - linux
+      - version_constraint: semver("<= 2.1.0-alpha29")
+        no_asset: true
+      - version_constraint: Version == "v2.1.0-alpha3"
+        asset: keploy_{{.OS}}_{{.Arch}}.{{.Format}}
+        format: tar.gz
+        checksum:
+          type: github_release
+          asset: keploy_{{trimV .Version}}_checksums.txt
+          algorithm: sha256
+        supported_envs:
+          - linux
+      - version_constraint: semver("<= 2.1.0-alpha31")
+        no_asset: true
+      - version_constraint: Version == "v2.1.0-alpha32"
+        asset: keploy_{{.OS}}_{{.Arch}}.{{.Format}}
+        format: tar.gz
+        rosetta2: true
+        checksum:
+          type: github_release
+          asset: keploy_{{trimV .Version}}_checksums.txt
+          algorithm: sha256
+        overrides:
+          - goos: darwin
+            asset: keploy_{{.OS}}_all.{{.Format}}
+        supported_envs:
+          - linux
+          - darwin
+      - version_constraint: semver("<= 2.1.0-alpha9")
+        asset: keploy_{{.OS}}_{{.Arch}}.{{.Format}}
+        format: tar.gz
+        checksum:
+          type: github_release
+          asset: keploy_{{trimV .Version}}_checksums.txt
+          algorithm: sha256
+        supported_envs:
+          - linux
+      - version_constraint: Version == "v2.2.0-alpha1"
+        asset: keploy_{{.OS}}_{{.Arch}}.{{.Format}}
+        format: tar.gz
+        rosetta2: true
+        checksum:
+          type: github_release
+          asset: keploy_{{trimV .Version}}_checksums.txt
+          algorithm: sha256
+        overrides:
+          - goos: darwin
+            asset: keploy_{{.OS}}_all.{{.Format}}
+        supported_envs:
+          - linux
+          - darwin
+      - version_constraint: semver("<= 2.2.0-alpha19")
+        asset: keploy_{{.OS}}_{{.Arch}}.{{.Format}}
+        format: tar.gz
+        rosetta2: true
+        checksum:
+          type: github_release
+          asset: keploy_{{trimV .Version}}_checksums.txt
+          algorithm: sha256
+        overrides:
+          - goos: darwin
+            asset: keploy_{{.OS}}_all.{{.Format}}
+      - version_constraint: Version == "v2.2.0-alpha2"
+        asset: keploy_{{.OS}}_{{.Arch}}.{{.Format}}
+        format: tar.gz
+        rosetta2: true
+        checksum:
+          type: github_release
+          asset: keploy_{{trimV .Version}}_checksums.txt
+          algorithm: sha256
+        overrides:
+          - goos: darwin
+            asset: keploy_{{.OS}}_all.{{.Format}}
+        supported_envs:
+          - linux
+          - darwin
+      - version_constraint: semver("<= 2.2.0-alpha21-rc2")
+        asset: keploy_{{.OS}}_{{.Arch}}.{{.Format}}
+        format: tar.gz
+        rosetta2: true
+        checksum:
+          type: github_release
+          asset: keploy_{{trimV .Version}}_checksums.txt
+          algorithm: sha256
+        overrides:
+          - goos: darwin
+            asset: keploy_{{.OS}}_all.{{.Format}}
+      - version_constraint: semver("<= 2.2.0-alpha21-rc8")
+        no_asset: true
+      - version_constraint: Version == "v2.2.0-alpha21-rc9"
+        asset: keploy_{{.OS}}_{{.Arch}}.{{.Format}}
+        format: tar.gz
+        rosetta2: true
+        checksum:
+          type: github_release
+          asset: keploy_{{trimV .Version}}_checksums.txt
+          algorithm: sha256
+        overrides:
+          - goos: darwin
+            asset: keploy_{{.OS}}_all.{{.Format}}
+        supported_envs:
+          - linux
+          - darwin
+      - version_constraint: semver("<= 2.2.0-alpha29")
+        asset: keploy_{{.OS}}_{{.Arch}}.{{.Format}}
+        format: tar.gz
+        rosetta2: true
+        checksum:
+          type: github_release
+          asset: keploy_{{trimV .Version}}_checksums.txt
+          algorithm: sha256
+        overrides:
+          - goos: darwin
+            asset: keploy_{{.OS}}_all.{{.Format}}
+      - version_constraint: Version == "v2.2.0-alpha3"
+        asset: keploy_{{.OS}}_{{.Arch}}.{{.Format}}
+        format: tar.gz
+        rosetta2: true
+        checksum:
+          type: github_release
+          asset: keploy_{{trimV .Version}}_checksums.txt
+          algorithm: sha256
+        overrides:
+          - goos: darwin
+            asset: keploy_{{.OS}}_all.{{.Format}}
+        supported_envs:
+          - linux
+          - darwin
+      - version_constraint: semver("<= 2.2.0-alpha32")
+        asset: keploy_{{.OS}}_{{.Arch}}.{{.Format}}
+        format: tar.gz
+        rosetta2: true
+        checksum:
+          type: github_release
+          asset: keploy_{{trimV .Version}}_checksums.txt
+          algorithm: sha256
+        overrides:
+          - goos: darwin
+            asset: keploy_{{.OS}}_all.{{.Format}}
+      - version_constraint: semver("<= 2.2.0-alpha4-rc5")
+        asset: keploy_{{.OS}}_all.{{.Format}}
+        format: tar.gz
+        rosetta2: true
+        checksum:
+          type: github_release
+          asset: keploy_{{trimV .Version}}_checksums.txt
+          algorithm: sha256
+        overrides:
+          - goos: linux
+            asset: keploy_{{.OS}}_{{.Arch}}.{{.Format}}
+        supported_envs:
+          - linux
+          - darwin
+      - version_constraint: Version == "v2.2.0-alpha5"
+        no_asset: true
+      - version_constraint: "true"
+        asset: keploy_{{.OS}}_{{.Arch}}.{{.Format}}
+        format: tar.gz
+        rosetta2: true
+        checksum:
+          type: github_release
+          asset: keploy_{{trimV .Version}}_checksums.txt
+          algorithm: sha256
+        overrides:
+          - goos: darwin
+            asset: keploy_{{.OS}}_all.{{.Format}}
